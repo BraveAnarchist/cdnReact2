@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const styl = {
+            marginBottom: "7vh"
+        }
+        function Header() {
+            return <div style={styl}><a style={{ fontSize: "larger", fontWeight: "bolder" }} href="https://www.google.com/search?q=cia+is+evil&rlz=1C1VDKB_enIN1000IN1000&oq=cia+is+evil&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDIzODNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">Getting Started with the web</a><p> dolor sit amet consectetur, adipisicing elit. Totam qui, modi, ab recusandae optio, corporis temporibus cupiditate ipsum earum fugit architecto commodi deleniti sed. Ducimus laboriosam dicta rem ipsam voluptatem.
+                Culpa sint saepe assumenda nesciunt. Corporis, eum! Ipsa repellendus tempora temporibus doloremque commodi optio, </p></div>
+        }
+        function Middle() {
+            return <div style={styl}><a style={{ fontSize: "larger", fontWeight: "bolder" }} href="https://www.google.com/search?q=cia+is+evil&rlz=1C1VDKB_enIN1000IN1000&oq=cia+is+evil&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDIzODNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">HTML -- Structuring the web</a><p> dolor sit amet consectetur, adipisicing elit. Totam qui, modi, ab recusandae optio, corporis temporibus cupiditate ipsum earum fugit architecto commodi deleniti sed. Ducimus laboriosam dicta rem ipsam voluptatem.
+                Culpa sint saepe assumenda nesciunt. Corporis, eum! Ipsa repellendus tempora temporibus doloremque commodi optio, </p></div>
+        }
+        function End() {
+            return <div style={styl}><a style={{ fontSize: "larger", fontWeight: "bolder" }} href="https://www.google.com/search?q=cia+is+evil&rlz=1C1VDKB_enIN1000IN1000&oq=cia+is+evil&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDIzODNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">CSS -- Styling the web</a><p> dolor sit amet consectetur, adipisicing elit. Totam qui, modi, ab recusandae optio, corporis temporibus cupiditate ipsum earum fugit architecto commodi deleniti sed. Ducimus laboriosam dicta rem ipsam voluptatem.
+                Culpa sint saepe assumenda nesciunt. Corporis, eum! Ipsa repellendus tempora temporibus doloremque commodi optio, </p></div>
+        }
+
+        class App extends React.Component {
+            render() {
+                return <div>
+                    <h1>Topics Covered</h1>
+                    <p>The following is a list of all the topics we cover in the MDN learning area. </p>
+                    <Header />
+                    <Middle />
+                    <End />
+                </div>
+            }
+        }
+        ReactDOM.render(<App />, document.getElementById("root"))
+    </script>
+</body>
+
+</html>
